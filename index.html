@@ -23,16 +23,23 @@ s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s);
 }(window,document,'script');
 
-fbq('init','1492526651070342');
+fbq('init','1492526651070342');   // <-- GANTI dengan Pixel ID anda
+
 fbq('track','PageView');
 
+fbq('trackCustom','ShopeeClick',{},{
+  event_callback:function(){
+    location.replace('https://s.shopee.com.my/30mniKV88l'); // <-- GANTI link Shopee
+  }
+});
+
 setTimeout(function(){
-location.replace('0;url=0;url= https://s.shopee.com.my/30mniKV88l');
+  location.replace('https://s.shopee.com.my/30mniKV88l'); // <-- GANTI link Shopee
 },50);
 </script>
 
 <noscript>
-<meta http-equiv="refresh" content="0;url=0;url=0;url= https://s.shopee.com.my/30mniKV88l">
+<meta http-equiv="refresh" content="0;url= https://s.shopee.com.my/30mniKV88l">
 </noscript>
 
 </head>
